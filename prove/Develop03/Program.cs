@@ -30,6 +30,12 @@ class Program
                 scripture.HideWords();
                 ClearConsole();
             }
+
+                if(scripture.AllWordsHidden())
+                {
+                    Console.WriteLine("All words are hidden.");
+                    continueProgram = false;
+                }
         }
     }
     private static void ClearConsole()

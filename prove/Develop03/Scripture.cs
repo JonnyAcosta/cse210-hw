@@ -45,6 +45,13 @@ public class Scripture
          {
             wordToHide = words[random.Next(0, words.Count)];
          } while (wordToHide.IsHidden());
+
+         wordToHide.Hide();
       }
+   }
+
+   public bool AllWordsHidden()
+   {
+      return words.All(word => word.IsHidden());
    }
 }

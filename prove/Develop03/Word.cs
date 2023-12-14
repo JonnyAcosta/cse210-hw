@@ -23,7 +23,7 @@ public class Word
 
     public override string ToString()
     {
-        return isHidden.ToString();
+        return isHidden ? "*****" : text;
     }
 
 
